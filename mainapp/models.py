@@ -1,9 +1,10 @@
 from django.db import models
-
+from django.utils import timezone
+from datetime import datetime
 # Create your models here.
 
 
-class category(models.Model):
+class Category(models.Model):
 
     category = models.CharField(max_length=50)
 
@@ -11,13 +12,13 @@ class category(models.Model):
         return self.category
 
 
-class project(models.Model):
+class Project(models.Model):
     category = models.ForeignKey("category", on_delete=models.CASCADE)
     name = models.CharField(max_length=500)
     description = models.TextField()
     ytlink = models.URLField(max_length=200)
     need = models.IntegerField()
-    recieved = models.IntegerField()
-
+    received = models.IntegerField()
+    # created_at = models.DateTimeField(auto_now_add=True, default=timezone.now)
     def __str__(self):
         return self.name

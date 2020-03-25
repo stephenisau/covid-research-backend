@@ -1,0 +1,10 @@
+@import '/styles/config';
+
+@mixin header() {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  outline: none;
+  background-color: rgb(255,255,255);
+  margin-top: 0px;
+}
+

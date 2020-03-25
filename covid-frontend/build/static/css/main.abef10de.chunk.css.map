@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,mJAEY,CACZ,kCAAmC,CACnC,iCAAkC,CAClC,wBAA0B,CAC3B,KAGC,yEACW,CAZb,iBACI,UAAW,CACd,WAGG,qBACJ,CAAC,UAGG,SAAU,CAMb,0BAGG,eACJ,CAAC,UAGG,aAAgB,CAtBpB,MACI,UAAW","file":"main.abef10de.chunk.css","sourcesContent":["input {\n    width: 100%;\n}\n\n.form-control {\n    // width: 100%;\n}"]}
