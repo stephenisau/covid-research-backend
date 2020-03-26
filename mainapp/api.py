@@ -1,6 +1,6 @@
-from mainapp.models import Category, Project
+from mainapp.models import Category, Project, LandingPage
 from rest_framework import viewsets, permissions
-from .serializers import ProjectSerializer, CategorySerializer
+from .serializers import ProjectSerializer, CategorySerializer, LandingPageSerializer
 
 
 class ProjectViewSet(viewsets.ModelViewSet):
@@ -19,3 +19,9 @@ class CategoryViewSet(viewsets.ModelViewSet):
     ]
 
     serializer_class = CategorySerializer
+    
+class LandingPageView(viewsets.ModelViewSet):
+    queryset = LandingPage.objects.all()
+    permission_classes = [
+        permissions.AllowAny
+    ]
