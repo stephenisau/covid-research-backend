@@ -1,22 +1,27 @@
 set -ex
-apt install -y python3-pip nginx
+sudo apt update
+sudo apt install -y python3-pip nginx libpq-dev
 pip3 install virtualenv uwsgi
 virtualenv venv
 
-mkdir -p /etc/uwsgi/sites
-cp wsgi.ini /etc/uwsgi/sites/covid-research-backend.ini
-cp nginx-site.conf /etc/nginx/sites-available/covid-research-backend
-ln -s /etc/nginx/sites-available/covid-research-backend /etc/nginx/sites-enabled/covid-research-backend
-cp uwsgi.service /etc/systemd/system/uwsgi.service
+sudo mkdir -p /etc/uwsgi/sites
+sudo cp wsgi.ini /etc/uwsgi/sites/covid-research-backend.ini
+sudo cp nginx-site.conf /etc/nginx/sites-available/covid-research-backend
+sudo ln -sf /etc/nginx/sites-available/covid-research-backend /etc/nginx/sites-enabled/covid-research-backend
+sudo rm -f /etc/nginx/sites-enabled/default
+sudo cp uwsgi.service /etc/systemd/system/uwsgi.service
 
-mkdir -p /var/www/fund_covid/static/
+sudo mkdir -p /var/www/fund_covid/static/
+sudo chown ubuntu /var/www/fund_covid/static/
 
-systemctl daemon-reload
-systemctl restart nginx
-systemctl start uwsgi
-systemctl enable nginx
-systemctl enable uwsgi
+sudo systemctl daemon-reload
+sudo systemctl restart nginx
+sudo systemctl start uwsgi
+sudo systemctl enable nginx
+sudo systemctl enable uwsgi
 
-source venv/bin/activate
+export DJANGO_SETTINGS_MODULE=covid_research.settings.production
+source ./venv/bin/activate
 pip install -r requirements.txt
-python manage.py collectstatic
+python manage.py collectstatic --noinput
+sudo chown -R ubuntu:www-data /var/www/fund_covid/static
