@@ -10,10 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const initialState = {
-  email: "",
   projectName: "",
+  projectDetails: "",
+  contactName: "",
+  email: "",
   fundingAmount: "",
-  projectDetails: ""
 };
 
 
