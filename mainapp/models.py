@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from datetime import datetime
+from django_countries.fields import CountryField
 # Create your models here.
 
 
@@ -24,10 +25,17 @@ class Project(models.Model):
         return self.name
 
 class LandingPage(models.Model):
-    email = models.EmailField(max_length=254)
-    name = models.CharField(max_length=500)
-    need = models.IntegerField()
-    description = models.TextField()
+    project_name = models.CharField(max_length=30, name="Project Name")
+    project_description = models.CharField(max_length=30, name="Project Description")
+    contact_name = models.TextField(name="Contact Name")
+    contact_email = models.EmailField(name="Contact Email")
+
+    country = CountryField()
+    city = models.CharField(max_length=30, name="City")
+
+    funding = models.BooleanField(name="Need Funding", default=False)
+    funding_type = models.CharField(max_length=30, name="Enter a funding type (ex: Patreon) ")
+    funding_amount = models.IntegerField(name="How much funding do you need?")
 
     def __str__(self):
         return self.name

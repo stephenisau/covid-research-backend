@@ -131,5 +131,5 @@ STATIC_URL = '/static/'
 
 
 STATIFILES_DIRS = [
-    os.path.join(BASE_DIR, 'covid-frontend/build/static')
+    os.path.join(BASE_DIR, 'resources')
 ]
