@@ -1,6 +1,6 @@
 set -ex
 sudo apt update
-sudo apt install -y python3-pip nginx libpq-dev certbot
+sudo apt install -y python3-pip nginx libpq-dev certbot postgresql-client-common
 pip3 install virtualenv uwsgi
 virtualenv venv
 
@@ -25,3 +25,4 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 python manage.py collectstatic --noinput
 sudo chown -R ubuntu:www-data /var/www/fund_covid/static
+python manage.py migrate
