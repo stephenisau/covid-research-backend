@@ -1,6 +1,6 @@
 set -ex
 sudo apt update
-sudo apt install -y python3-pip nginx libpq-dev
+sudo apt install -y python3-pip nginx libpq-dev certbot
 pip3 install virtualenv uwsgi
 virtualenv venv
 
