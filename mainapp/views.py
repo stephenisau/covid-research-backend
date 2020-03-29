@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Category, Project, LandingPage
 from .forms import landingpageForm
 from django.contrib import messages
@@ -22,3 +22,13 @@ def index(request):
         "landingForm": landingForm
     }
     return render(request, 'mainapp/index.html', context)
+
+def thank_you(request):
+    landingform = landingpageForm(request.POST or None)
+    if request.method == "POST":
+        if landingform.is_valid():
+            landingform.save()
+            messages.success(request, "Project added successfully!") 
+        else:
+            return redirect(to="/")
+    return render(request, 'mainapp/landing.html', status=200)

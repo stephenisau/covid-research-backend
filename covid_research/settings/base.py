@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp',
     'rest_framework',
-    # 'covid-frontend',
-    'frontend'
+    'frontend',
+    'django_countries'
+
 ]
 
 MIDDLEWARE = [
@@ -58,9 +59,7 @@ ROOT_URLCONF = 'covid_research.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'covid-frontend/build'),
-        ],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

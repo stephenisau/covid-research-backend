@@ -191,13 +191,18 @@
                                     contenteditable="false">Let us help your project get the funding it needs to fight
                                     COVID-19.</div>
                             </div>
-                            <form method='POST'>
+                            <form method='POST' action="/thank-you" class="bootstrap4">
                                 {% csrf_token %}
                                 {% for field in landingForm %}
-                                    <div class="form-group">
-                                        <b>{{ field.label }}: </b>
-                                        {{ field }}
-                                    </div>
+                                {% if field.field.type == checkbox %}
+                                <div class="form-group">
+                                    <b>{{ field.label }}: </b>{{ field }}
+                                </div>
+                                {% else %}
+                                <div class="form-group">
+                                    {{ field }}
+                                </div>
+                                {% endif %}
                                 {% endfor %}
                                 <!-- <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable"
                                     id="tmp_input-30511-186-155" data-de-type="input" data-de-editing="false"
@@ -923,7 +928,7 @@ If you need assistance with Custom Coding, please consult a professional coder.*
                 for (; i < len; i++) {
                     comment = comments[i];
                     FB.XFBML.parse(comment
-                    .parentElement); // comments need to be rendered/parsed from their parent element.
+                        .parentElement); // comments need to be rendered/parsed from their parent element.
                 }
             }
 
@@ -1441,11 +1446,11 @@ If you need assistance with Custom Coding, please consult a professional coder.*
                         "address_2"))), "null" != getURLParameter("city") && ($(
                         'input[name="contact[city]"]').val(getURLParameter("city")), $(
                         "[name=city]").val(getURLParameter("city"))), "null" != getURLParameter(
-                    "state") && ($('input[name="contact[state]"]').val(getURLParameter("state")), $(
+                        "state") && ($('input[name="contact[state]"]').val(getURLParameter("state")), $(
                         "[name=state]").val(getURLParameter("state"))), "null" != getURLParameter(
-                    "zip") && ($('input[name="contact[zip]"]').val(getURLParameter("zip")), $(
+                        "zip") && ($('input[name="contact[zip]"]').val(getURLParameter("zip")), $(
                         "[name=zip]").val(getURLParameter("zip"))), "null" != getURLParameter(
-                    "phone") && ($('input[name="contact[phone]"]').val(getURLParameter("phone")), $(
+                        "phone") && ($('input[name="contact[phone]"]').val(getURLParameter("phone")), $(
                         "[name=phone]").val(getURLParameter("phone")))
             })
         });

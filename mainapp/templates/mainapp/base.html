@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -23,7 +23,50 @@
         rel="stylesheet" type="text/css">
     <title>Fund Covid</title>
 </head>
+
 <body>
-    
+    <nav className="nav d-flex justify-content-between">
+        <a className="p-2 text-muted" href="/about">About CFR</a>
+        <a className="p-2 text-muted" href="/projects">Project List </a>
+        <a className="p-2 text-muted" href="/news">Covid News</a>
+        <a className="p-2 text-muted" href="/research">Research Papers</a>
+        <a className="p-2 text-muted" href="/funding">Funding News</a>
+        <a className="p-2 text-muted" href="/more-info">Get Informed</a>
+    </nav>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="styled-footer">
+        <div class="footer-container">
+            <i class="fa fa-dollar-sign"></i>
+            <div class="logo-text">
+                ALL DONATIONS ARE SENT DIRECTLY TO PROJECTS USING STRIPE.
+            </div>
+        </div>
+        <div class="footer-container">
+            <i class="fa fa-bullhorn"></i>
+            <div class="logo-text">
+                GET YOUR PROJECT IN FRONT OF THE EYES IT NEEDS.
+            </div>
+        </div>
+        <div class="footer-container">
+            <i class="fa fa-bomb"></i>
+            <div class="logo-text">
+                HELP US MITIGATE THE IMPACT OF COVID-19 CRISIS.
+            </div>
+        </div>
+        <div class="footer-container">
+            <i class="fa fa-globe-americas"></i>
+            <div class="logo-text">
+                LET US ANSWER THE CALL TOGETHER AS A GLOBAL COMMUNITY.
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
