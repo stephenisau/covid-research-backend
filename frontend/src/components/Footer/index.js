@@ -20,7 +20,7 @@ const Footer = () => {
       <FooterContainer>
         <FontAwesomeIcon size='4x' color="white" icon={faDollarSign} />
         <LogoText>
-          ALL DONATIONS ARE SENT DIRECTLY TO PROJECTS USING STRIPE.
+          ALL DONATIONS ARE SENT DIRECTLY TO PROJECTS.
         </LogoText>
       </FooterContainer>
       <FooterContainer>

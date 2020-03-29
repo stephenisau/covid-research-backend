@@ -35,6 +35,7 @@ python-dateutil==2.8.0
 pytz==2019.3
 PyYAML==5.2
 requests==2.20.1
+requests-cache==0.5.2
 semantic-version==2.5.0
 six==1.11.0
 sqlparse==0.3.1
