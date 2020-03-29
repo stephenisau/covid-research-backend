@@ -44,5 +44,5 @@ class LandingPage(models.Model):
     funding_amount = models.IntegerField(name="funding_amount")
 
     def __str__(self):
-        return self.name
+        return self.project_name
 
