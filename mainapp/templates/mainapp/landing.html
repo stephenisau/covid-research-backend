@@ -1,0 +1,55 @@
+{% extends "./base.html" %}
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+{% block content %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column center-block">
+    <main role="main" class="inner cover">
+
+        <div class="jumbotron text-center align-items-center">
+            <h1 class="display-3">Thank You!</h1>
+            <p class="lead">Thanks for registering! 
+                As we get closer to our launch, look out for emails 
+                from us with more instructions!</p>
+            <hr>
+            <p>
+                Having trouble? <a href="mailto:Fundcovid@gmail.com">Contact us</a>
+            </p>
+            <p class="lead">
+                <a class="btn btn-lg bg-dark text-white" style="background-color: #8c0000; color: white;" href="/"
+                    role="button">Continue to homepage</a>
+            </p>
+        </div>
+    </main>
+</div>
+
+<div class="styled-footer">
+    <div class="footer-container">
+        <i class="fa fa-dollar-sign"></i>
+        <div class="logo-text">
+            ALL DONATIONS ARE SENT DIRECTLY TO PROJECTS USING STRIPE.
+        </div>
+    </div>
+    <div class="footer-container">
+        <i class="fa fa-bullhorn"></i>
+        <div class="logo-text">
+            GET YOUR PROJECT IN FRONT OF THE EYES IT NEEDS.
+        </div>
+    </div>
+    <div class="footer-container">
+        <i class="fa fa-bomb"></i>
+        <div class="logo-text">
+            HELP US MITIGATE THE IMPACT OF COVID-19 CRISIS.
+        </div>
+    </div>
+    <div class="footer-container">
+        <i class="fa fa-globe-americas"></i>
+        <div class="logo-text">
+            LET US ANSWER THE CALL TOGETHER AS A GLOBAL COMMUNITY.
+        </div>
+    </div>
+</div>
+{% endblock %}
