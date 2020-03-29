@@ -16,7 +16,7 @@ const Header = () => {
       />
       <HeaderContactInfo>
         <ContactUsText isEmail={false}>Contact Us:</ContactUsText>
-        <ContactUsText isEmail={true}>CovidResearchFund@gmail.com</ContactUsText>
+        <ContactUsText isEmail={true}>fundcovid@gmail.com</ContactUsText>
       </HeaderContactInfo>
     </HeaderContainer>
   );
