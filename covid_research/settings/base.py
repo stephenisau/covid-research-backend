@@ -130,5 +130,6 @@ STATIC_URL = '/static/'
 
 
 STATIFILES_DIRS = [
-    os.path.join(BASE_DIR, 'resources')
+    os.path.join(BASE_DIR, 'assets'),
+    os.path.join(BASE_DIR, 'custom')
 ]
