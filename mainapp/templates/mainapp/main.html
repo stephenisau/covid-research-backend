@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="main-page-container">
+        <div className="row">
+            <div className="col-md-6">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+            <div className="col-md-6">
+                <div class="virus-image-container">
+                    <div class="virus-image-caption">
+                        <div class="virus-cases">CoronaVirus Cases:</div>
+                        <div class="virus-cases"> 378,679</div>
+                        </divn>
+                        <div class="virus-image" src={coronavirus}></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}
