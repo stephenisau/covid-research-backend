@@ -11,6 +11,9 @@ class landingpageForm(forms.ModelForm):
 
 
     def __init__(self, *args, **kwargs):
+        """
+        This function adds placeholder text and inline styling to our form based on the input field type.
+        """
         super(landingpageForm, self).__init__(*args, **kwargs)
         for key, field in self.fields.items():
             if isinstance(field.widget, forms.TextInput) or \
