@@ -12,8 +12,12 @@ def index(request):
     AllCategories = Category.objects.all()
     AllProjects = Project.objects.all()
     landingForm = landingpageForm(request.POST or None)
-    stats = s.get('https://bing.com/covid/data').json()
-    stats['totalConfirmedWithCommas'] = f"{stats['totalConfirmed']:,}"
+    try:
+        stats = s.get('https://bing.com/covid/data').json()
+        stats['totalConfirmedWithCommas'] = f"{stats['totalConfirmed']:,}"
+    except:
+        stats = {'totalConfirmedWithCommas':''}
+
     if request.method == 'POST':
         if landingForm.is_valid():
             landingForm.save()
