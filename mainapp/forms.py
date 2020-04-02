@@ -1,6 +1,6 @@
 from django import forms, template
 from .models import LandingPage
-
+import django_countries
 
 class landingpageForm(forms.ModelForm):
 
@@ -19,9 +19,11 @@ class landingpageForm(forms.ModelForm):
             if isinstance(field.widget, forms.TextInput) or \
                     isinstance(field.widget, forms.Textarea) or \
                     isinstance(field.widget, forms.DateInput) or \
+                    isinstance(field.widget, forms.NumberInput) or \
                     isinstance(field.widget, forms.EmailInput) or \
                     isinstance(field.widget, forms.IntegerField) or \
                     isinstance(field.widget, forms.DateTimeInput) or \
-                    isinstance(field.widget, forms.TimeInput):
+                    isinstance(field.widget, forms.TimeInput) or \
+                    isinstance(field.widget, django_countries.widgets.LazySelect):
                 field.widget.attrs.update(
                     {'placeholder': field.label, 'style': 'width: 100%;'})

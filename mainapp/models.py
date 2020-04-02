@@ -34,13 +34,12 @@ class LandingPage(models.Model):
     project_name = models.CharField(max_length=30, name="project_name")
     project_description = models.CharField(max_length=140, name="project_description")
     contact_name = models.CharField(max_length=30, name="contact_name")
-    contact_email = models.EmailField(name="contact_email", unique=True)
+    contact_email = models.EmailField(name="contact_email")
 
     country = CountryField()
 
     city = models.CharField(max_length=30, name="project_city")
     funding = models.BooleanField(name="need_funding", default=False)
-    funding_type = models.CharField(max_length=30, name="funding_type")
     funding_amount = models.IntegerField(name="funding_amount")
 
     def __str__(self):
