@@ -1,4 +1,6 @@
 body {
+	background: url('/static/assets/images/background.png');
+	background-repeat: no-repeat;
 }
 
 p {
