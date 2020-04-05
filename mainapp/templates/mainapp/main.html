@@ -4,19 +4,57 @@
 
 <div class="container">
     <div class="main-page-container">
-        <div className="row">
-            <div className="col-md-6">
-                {% block content %}
-
-                {% endblock %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="register-form">
+                    <div class="register-header">
+                        <h1>Combat the Crisis</h1>
+                        <p>Let us help your project get the funding it needs to fight COVID-19</p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="project-name">Project Name</label>
+                            <input type="text" class="form-control" id="project-name"
+                                aria-describedby="project-name-form" placeholder="Enter a Project Name...">
+                            <small id="project-name" class="form-text text-muted">Enter a name for your project.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-description">Project Description</label>
+                            <textarea type="text" class="form-control" id="exampleInputPassword1"
+                                placeholder="Enter a short project description">
+                            <small id="project-name" class="form-text text-muted">Enter some details about your project.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-name">Contact Name</label>
+                            <input type="text" class="form-control" id="contact-name"
+                                placeholder="Enter a point of contact">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Contact Email</label>
+                            <input type="text" class="form-control" id="contact-email"
+                                placeholder="Enter a email contact">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="need-funding">
+                            <label class="form-check-label" for="need-funding">Need funding</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="funding-amount">Funding Amount</label>
+                            <input type="text" class="form-control" id="funding-amount"
+                                placeholder="Enter an amount to be funded">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                      </form>
+                </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-8">
                 <div class="virus-image-container">
                     <div class="virus-image-caption">
                         <div class="virus-cases">CoronaVirus Cases:</div>
                         <div class="virus-cases"> 378,679</div>
                         </divn>
-                        <div class="virus-image" src={coronavirus}></div>
+                        <div class="virus-image" src="{% static 'assets/images/fundcovid.png' %}" ></div>
                     </div>
                 </div>
             </div>
