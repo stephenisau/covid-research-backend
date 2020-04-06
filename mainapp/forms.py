@@ -26,4 +26,4 @@ class landingpageForm(forms.ModelForm):
                     isinstance(field.widget, forms.TimeInput) or \
                     isinstance(field.widget, django_countries.widgets.LazySelect):
                 field.widget.attrs.update(
-                    {'placeholder': field.label, 'style': 'width: 100%;'})
+                    {'class': 'form-control','placeholder': field.label, 'style': 'width: 100%;'})
