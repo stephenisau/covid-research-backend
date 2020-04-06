@@ -20,7 +20,6 @@ p {
 }
 
 .styled-footer {
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: #8c0000;
@@ -146,4 +145,10 @@ p {
     background-color: rgb(163, 0, 0);
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.copyright {
+    text-align: center;
+    justify-content: center;
 }
