@@ -73,3 +73,77 @@ p {
 	color: white;
 	margin: 0;
 }
+
+
+.main-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.virus-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.virus-image-caption {
+    display: flex;
+}
+
+.virus-case {
+    color: 'black';
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+.virus-image {
+    height: 500px;
+    width: 500px;
+}
+
+.register-form {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+}
+
+.register-header {
+    font-size: 58px;
+    color: rgb(163, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.form-header {
+    font-size: 58px;
+    color: rgb(163, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.form-description {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    display: inline-block;
+    font-weight: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(163, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
