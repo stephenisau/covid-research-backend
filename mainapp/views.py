@@ -30,7 +30,7 @@ def index(request):
         "landingForm": landingForm,
         "stats": stats
     }
-    return render(request, 'mainapp/index.html', context)
+    return render(request, 'mainapp/main.html', context)
 
 def thank_you(request):
     landingform = landingpageForm(request.POST or None)

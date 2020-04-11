@@ -1,3 +1,13 @@
 from django.test import TestCase
+from mainapp.models import Project, Category, LandingPage
 
-# Create your tests here.
+
+class ProjectTestCase(TestCase):
+    pass
+
+
+class CategoryTestCase(TestCase):
+    pass
+
+class LandingPageTestCase(TestCase):
+    pass

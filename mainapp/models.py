@@ -30,6 +30,7 @@ class Project(models.Model):
         return project
 
 
+
 class LandingPage(models.Model):
     project_name = models.CharField(max_length=30, name="project_name")
     project_description = models.CharField(max_length=140, name="project_description")

@@ -7,7 +7,6 @@
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="initial-scale=1">
     <title>Fund Covid</title>
-    <link rel="stylesheet" media="screen" href="https://www.clickfunnels.com/assets/lander.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800" rel="stylesheet">
@@ -18,6 +17,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'custom/css/base.css' %}" type='text/css'>
     <link rel="stylesheet" href="{% static 'custom/css/app.css' %}" type='text/css'>
+    <link rel="stylesheet" href="{% static 'custom/css/main.css' %}" type='text/css'>
     <!-- Bootstrap -->
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
     <title>Fund Covid</title>
@@ -44,9 +44,9 @@
 
     <!-- Footer -->
 
-    <footer class="navbar fixed-bottom styled-footer">
-        <div class="container-fluid" style="background: transparent !important">
-            <div class="row mt-3">
+    <div class="container-fluid" style="background: transparent !important; padding: 0;">
+        <footer class="navbar styled-footer mt-4">
+            <div class="row mt-4 mb-4">
                 <div class="footer-container col-md-3">
                     <i class="fa fa-dollar-sign"></i>
                     <div class="logo-text">
@@ -72,14 +72,18 @@
                     </div>
                 </div>
             </div>
+        </footer>
+    </div>
 
-            <!-- <div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="copyright">
                     <p>Copyright © 2020 Fund Covid. All Rights Reserved.</p>
                 </div>
-            </div> -->
+            </div>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>

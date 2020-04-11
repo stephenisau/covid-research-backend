@@ -1,10 +1,9 @@
 body {
 	background: url('/static/assets/images/background.png');
-	background-repeat: no-repeat;
-}
-
-p {
-	font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    background-position: center;
 }
 
 .light {
@@ -23,7 +22,7 @@ p {
 	bottom: 0;
 	width: 100%;
 	background-color: #8c0000;
-	padding: 2rem 0;
+	padding-top: 10px;
 	display: flex;
 }
 
@@ -132,23 +131,97 @@ p {
     line-height: normal;
     margin-bottom: 10px;
 }
+	background: url('/static/assets/images/background.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    background-position: center;
+}
 
-.submit-button {
-    display: inline-block;
-    font-weight: 1.5rem;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border: 1px solid;
-    font-size: 1.5rem;
-    color: white;
-    background-color: rgb(163, 0, 0);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.light {
+	font-weight: 100;
+}
+
+.semibold {
+	font-weight: 600;
+}
+
+.extrabold {
+	font-weight: 800;
+}
+
+.styled-footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #8c0000;
+	padding: 2rem 0;
+	display: flex;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-container > .fa {
+    font-size: 50px;
+}
+
+.logo-text {
+	color: white;
+	font-size: 1.2rem;
+	width: fit-content;
+	margin-top: 0.5rem;
+	width: 75%;
+}
+
+.fa {
+	font-size: 8rem;
+	color: white;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.header-contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.header-contact-info > p {
+	font-size: 20px;
+}
+
+.contact-us {
+	color: rgb(167, 3, 15);
+	margin: 0;
+}
+
+.email-contact {
+	color: white;
+	margin: 0;
+}
+
+
+.main-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .copyright {
     text-align: center;
     justify-content: center;
+    padding: 30px;
 }

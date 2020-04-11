@@ -1,0 +1,199 @@
+* {
+    font-family: 'Open Sans', Montserrat, Helvetica, sans-serif, Abel;
+}
+
+p, h1, h2, h3, h4, h5, h6, div, main, {
+    font-weight: 800;
+}
+
+
+form > small {
+    color: black;
+}
+
+.main-page-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.virus-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.virus-image-caption {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.virus-case-number {
+    color: rgb(163, 0, 0);
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.virus-case {
+    color: 'black';
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.virus-image {
+    height: 500px;
+    width: 500px;
+    box-shadow: 2px 2px 1px grey;
+    border: 0.5px solid grey;
+}
+
+
+.register-header {
+    font-size: 58px;
+    color: rgb(163, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.form-header {
+    font-size: 58px;
+    color: rgb(163, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.form-description {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+
+.register-header > .form-description {
+    color: black;
+}
+
+.submit-button {
+    display: inline-block;
+    font-weight: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(163, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.submit-button > .fa {
+    font-size: 1.5rem;
+}
+
+
+.mission-statement-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    align-items: center;
+    padding: 5px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+    width: 85%;
+}
+
+.mission-statement-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+.map-section {
+    padding-left: 20%;
+    margin: auto;
+}
+
+.map-caption {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(163, 0, 0);
+    text-transform: uppercase;
+}
+
+.registration-container {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+input[type="text"], textarea[type="text"]  {
+    box-shadow: 1px 1px 0.5px grey;
+    width: 90%;
+}
+
+
+.covid-info-container {
+    margin: auto;
+    padding: 20px;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.info-container-top {
+    padding: 15px;
+}
+
+.info-container-bottom {
+    padding: 15px;
+}
+
+.info-text-header {
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.info-description {
+    color: rgb(163, 0, 0);
+    font-size: 1.5rem;
+}
+
+
+.funding-container {
+    /* padding: 10px; */
+    margin: auto;
+    text-align: center;
+}
+
+.stat-container {
+
+}
+
+.stat-category {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold
+}
+
+.stat-num {
+    color: rgb(163, 0, 0);
+}
