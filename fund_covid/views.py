@@ -12,3 +12,6 @@ def index(request):
 
 def register(request):
     return HttpResponse("register")
+
+def all(request):
+    pass
