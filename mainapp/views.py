@@ -30,7 +30,7 @@ def index(request):
         "landingForm": landingForm,
         "stats": stats
     }
-    return render(request, 'mainapp/main.html', context)
+    return render(request, 'mainapp/index.html', context)
 
 def thank_you(request):
     landingform = landingpageForm(request.POST or None)
@@ -42,3 +42,7 @@ def thank_you(request):
             print('Landing form is not valid')
             return redirect(to="/")
     return render(request, 'mainapp/landing.html', status=200)
+
+
+def test(request):
+    return render(request, 'mainapp/main.html')

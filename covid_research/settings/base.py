@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'mainapp',
     'rest_framework',
     'frontend',
-    'django_countries'
-
+    'django_countries',
+    'fund_covid',
+    'users'
 ]
 
 MIDDLEWARE = [
